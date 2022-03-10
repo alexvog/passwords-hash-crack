@@ -6,7 +6,7 @@ The project is divided into 2 programs: hash_passwords.py and crack_hash.py.
 The libraries needed to run the programs are in the requirements.txt file.
 
 
-hash_passwords.py:
+## hash_passwords.py:
 
 hash_passwords.py is a program that creates users with usernames in ascending order in userxxx format. The first user will have username user000, the second user001, and so on. All the checks are made so that if there are no users in the file, the numbering starts from 000, or if there are already some users in the file, the numbering continues by the last user numbering.
 
@@ -16,11 +16,11 @@ The entered password is a hashed via the pwhash.str function of the nacl library
 
 The program creates a text file called "credentials.txt", where usernames and hashed passwords are stored in the following format:
 
-            username: hashed_password
+**<p align="center">username: hashed_password</p>**
 
 
 
-crack_hash.py:
+## crack_hash.py:
 
 crack_hash.py is a program that accepts the text file "credentials.txt" created by the hash_passwords.py program and a text file "20_wordlist.txt", which contains 20 user passwords (usually the most common). The reason why 20_wordlist.txt contains only 20 passwords is due to the time it takes for hashed passwords to be broken. The more passwords the file contains, the more time the search takes.
 
